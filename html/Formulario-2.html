@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+   <head>
+       <meta charset="utf-8" />
+       <title>Formulario de Entrega de Aceituna</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <link href="../css/styles.css" rel="stylesheet">
+       <form action = "/my-handling-form-page" method="post"></form>
+   </head>
+   <body>
+      <!-- Segundo formulario: -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div class="container">
+            <nav role="navigation"  class="navbar navbar-expand-lg bg-body-tertiary navbar" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <a class="navbar-brand" href="Formulario-1.html">Registro de socios</a>
+                    <a class="navbar-brand" href="#">Entrega de aceituna</a>
+                    <a class="navbar-brand" href="Formulario-3.html">Comprar aceite</a>
+                    <!--
+                        <div class="collapse navbar-collapse nav-" id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Formularios
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Formulario-1.html">Registro de socios</a></li>
+                          <li><a class="dropdown-item" href="Formulario-2.html">Entrega de aceituna</a></li>
+                          <li><a class="dropdown-item" href="Formulario-3.html">Venta de aceite</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Búsqueda</button>
+                    </form>
+                  </div>-->
+                </div>
+              </nav>
+            </div>
+
+      <h1>Formulario de Entrega de Aceituna</h1>
+      <label for = "numero_entrega"> Número de entrega  </label>
+      <input type="number" id="numero_entrega" name="numero_entrega" value="1"class="form-input" readonly value="1" required maxlength="30"/>
+      <br><br><br>
+      <label for = "datetime"> Fecha y hora: </label>
+      <input type = "datetime-local" id = "datetime" name = "datetime" required ></input>
+      <br><br><br>
+      <label for = "num_socio"> Número de socio:</label>
+      <input type = "number" id = "num_socio" name = "num_socio" min="1" required ></input>
+      <br><br><br>
+      <label for = "cant_aceituna"> Cantidad de aceituna (kg):</label>
+      <input type = "number" id = "cant_aceituna" name = "cant_aceituna" min="0.1" required ></input>
+      <br><br><br>
+      <label for = "tipo_aceituna"> Tipo Aceituna: </label>
+      <select id = "tipo_aceituna" name = "tipo_aceituna">
+           <option value = "árbol"> Árbol </option>
+           <option value = "suelo"> Suelo </option>
+      </select>
+      <br><br><br>
+      <label for = "parcela"> Parcela SIGPAC </label>
+      <input type = "number" id = "parcela" name = "parcela" required ></input>
+      <br><br><br>
+      <label for = "recinto"> Recinto SIGPAC </label>
+      <input type = "number" id = "recinto" name = "recinto" required ></input>
+      <br><br><br>
+      <label for = "sender"> Enviar </label>
+      <input type = "submit" id = "sender" name = "sender" ></input>
+      </form>
+      <p>
+         <a href="index.html">Volver al inicio</a>
+     </p>
+   </body>
+</html>

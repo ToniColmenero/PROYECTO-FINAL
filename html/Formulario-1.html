@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> 
+        Formulario de registro - Cooperativa
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="../css/styles.css" rel="stylesheet">
+        <form action = "/my-handling-form-page" method="post"></form>
+
+    </head>
+    <body>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <div class="container">
+            <nav role="navigation"  class="navbar navbar-expand-lg bg-body-tertiary navbar" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <a class="navbar-brand" href="#">Registro de socios</a>
+                    <a class="navbar-brand" href="Formulario-2.html">Entrega de aceituna</a>
+                    <a class="navbar-brand" href="Formulario-3.html">Comprar aceite</a>
+                    <!--
+                        <div class="collapse navbar-collapse nav-" id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Formularios
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="Formulario-1.html">Registro de socios</a></li>
+                          <li><a class="dropdown-item" href="Formulario-2.html">Entrega de aceituna</a></li>
+                          <li><a class="dropdown-item" href="Formulario-3.html">Venta de aceite</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Búsqueda</button>
+                    </form>
+                  </div>-->
+                </div>
+              </nav>
+            </div>
+
+        <h1>Formulario de registro</h1>
+            <p>Número de socio: <input type="number" name="numerosocio" id="numerosocio" value="1" readonly></p>
+            <p>NIF: <input type="text" name="nif" id="nif" maxlength="9" required></p>
+            <p>Nombre: <input type="text" name="nombre" id="nombre" maxlength="30" required></p>
+            <p>Primer apellido: <input type="text" name="Apellido1" id="Apellido1" maxlength="30" required></p>
+            <p>Segundo apellido: <input type="text" name="Apellido2" id="Apellido2" maxlength="30" ></p>
+            <h2>Dirección:</h2>
+            <p>Tipo de vía: <input type="text" name="tipodevia" id="tipodevia" maxlength="30"></p>
+            <p>Nombre de la calle: <input type="text" name="nombrecalle" id="nombrecalle" maxlength="60" required></p>
+            <p>Número vivienda: <input type="text" name="numerovivienda" id="numerovivienda" maxlength="10" required></p>
+            <p>Piso: <input type="text" name="piso" id="piso" maxlength="30"></p>
+            <p>Código Postal: <input type="number" name="codigopostal" id="codigopostal" maxlength="5" required></p>
+            <p>Municipio: <input type="text" name="municipio" id="municipio" maxlength="50" required></p>
+            <p>Provincia: <select required name="provincia" id="provincia" required class="form-control">
+                <option value="">Elige Provincia</option>
+                <option value="Álava/Araba">Álava/Araba</option>
+                <option value="Albacete">Albacete</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Almería">Almería</option>
+                <option value="Asturias">Asturias</option>
+                <option value="Ávila">Ávila</option>
+                <option value="Badajoz">Badajoz</option>
+                <option value="Baleares">Baleares</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Burgos">Burgos</option>
+                <option value="Cáceres">Cáceres</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Cantabria">Cantabria</option>
+                <option value="Castellón">Castellón</option>
+                <option value="Ceuta">Ceuta</option>
+                <option value="Ciudad Real">Ciudad Real</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Cuenca">Cuenca</option>
+                <option value="Gerona/Girona">Gerona/Girona</option>
+                <option value="Granada">Granada</option>
+                <option value="Guadalajara">Guadalajara</option>
+                <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Huesca">Huesca</option>
+                <option value="Jaén">Jaén</option>
+                <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Las Palmas">Las Palmas</option>
+                <option value="León">León</option>
+                <option value="Lérida/Lleida">Lérida/Lleida</option>
+                <option value="Lugo">Lugo</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Melilla">Melilla</option>
+                <option value="Murcia">Murcia</option>
+                <option value="Navarra">Navarra</option>
+                <option value="Orense/Ourense">Orense/Ourense</option>
+                <option value="Palencia">Palencia</option>
+                <option value="Pontevedra">Pontevedra</option>
+                <option value="Salamanca">Salamanca</option>
+                <option value="Segovia">Segovia</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Soria">Soria</option>
+                <option value="Tarragona">Tarragona</option>
+                <option value="Tenerife">Tenerife</option>
+                <option value="Teruel">Teruel</option>
+                <option value="Toledo">Toledo</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Valladolid">Valladolid</option>
+                <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+                <option value="Zamora">Zamora</option>
+                <option value="Zaragoza">Zaragoza</option>
+              </select></p>
+            <p>Teléfono: <input type="tel" name="telefono" id="telefono" maxlength="9" required></p>
+            <p>Correo Electronico: <input type="email" name="correo electronico" id="correo electronico" maxlength="100"></p>
+            
+            <p>
+              <input type="submit" value="Enviar">
+            </p>
+            
+          </form>
+          <p>
+            <a href="index.html">Volver al inicio</a>
+        </p>
+    </body>
